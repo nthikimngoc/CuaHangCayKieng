@@ -184,7 +184,7 @@ class SANPHAM
         $dbcon = DATABASE::connect();
         try {
             $sql = "INSERT INTO 
-sanpham(tenso,phanloaisp,mota,giagoc,giaban,soluongton,hinhanh,luotxem,luotmua) 
+sanpham(tensp,phanloaisp,mota,giagoc,giaban,soluongton,hinhanh,luotxem,luotmua) 
 VALUES(:tensp,:phanloaisp,:mota,:giagoc,:giaban,:soluongton,:hinhanh,0,0)";
             $cmd = $dbcon->prepare($sql);
             $cmd->bindValue(":tensp", $sanpham->tensp);
