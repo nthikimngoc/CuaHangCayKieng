@@ -252,4 +252,21 @@ VALUES(:tensp,:phanloaisp,:mota,:giagoc,:giaban,:soluongton,:hinhanh,0,0)";
             exit();
         }
     }
+    public function timkiemsanpham($search)
+    {
+        $dbcon = DATABASE::connect();
+        try {
+            $sql = "SELECT * FROM sanpham s, phanloai p where s.phanloaisp = p.id AND  s.tensp like '%$search%'  "; //OR p.tenpl like '%$search%'
+            $cmd = $dbcon->prepare($sql);
+            // $cmd->bindValue(":tensp", $search);
+            $cmd->execute();
+            $result = $cmd->fetchAll();
+            return $result;
+        } catch (PDOException $e) {
+            $error_message = $e->getMessage();
+            echo "<p>Lỗi truy vấn: $error_message</p>";
+            exit();
+        }
+    }
+
 }
