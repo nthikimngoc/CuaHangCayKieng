@@ -21,8 +21,14 @@
                     <td><?php echo $n["sodienthoai"]; ?></td>
                     <td><?php echo $n["hoten"]; ?></td>
                     <td><?php echo $q["tenquyen"]; ?></td>
-                    <td><?php echo $n["trangthai"]; ?></td>
-                    <td><a href="index.php?action=khoa&id=<?php echo $n['id']; ?>" class="btn btn-warning">Khóa</a></td>
+                    <td><?php if ($n["trangthai"] == 1) { ?>
+                            <dt class=" text-primary font-weight">Hoạt động</dt>
+                        <?php } else { ?>
+                            <dt class=" text-danger">Khóa</dt>
+
+                        <?php } ?>
+                    </td>
+                    <td><a href="index.php?action=khoa&id=<?php echo $n['id']; ?>&trangthai=<?php echo $n['trangthai']; ?>" class="btn btn-warning">Khóa</a></td>
                 </tr>
     <?php
             }

@@ -43,7 +43,26 @@ switch ($action) {
         $nguoidungmoi->sethinhanh($hinhanh);
         // thêm
         $nd->themnguoidung($nguoidungmoi);
-        // load sản phẩm
+        // load người dùng
+        $quyen = $pq->layquyen();
+        $nguoidung = $nd->laydanhsachnguoidung();
+        include("main.php");
+        break;
+    case "khoa":
+        if (isset($_REQUEST["id"]))
+            $id = $_REQUEST["id"];
+        if (isset($_REQUEST["trangthai"]))
+            $trangthai = $_REQUEST["trangthai"];
+        else
+            $trangthai = "1";
+        if ($trangthai == "1") {
+            $trangthai = 0;
+            $nd->doitrangthai($id, $trangthai);
+        } else {
+            $trangthai = 1;
+            $nd->doitrangthai($id, $trangthai);
+        }
+        // load người dùng
         $quyen = $pq->layquyen();
         $nguoidung = $nd->laydanhsachnguoidung();
         include("main.php");
