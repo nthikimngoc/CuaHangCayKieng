@@ -61,6 +61,10 @@ switch ($action) {
             
         }
         break;
+        case "xemgiohang":
+            $giohang = laygiohang();
+            include("cart.php");
+            break;
     case "chovaogio":
         if (isset($_REQUEST["id"]))
         $id = $_REQUEST["id"];
