@@ -28,7 +28,14 @@
 
                         <?php } ?>
                     </td>
-                    <td><a href="index.php?action=khoa&id=<?php echo $n['id']; ?>&trangthai=<?php echo $n['trangthai']; ?>" class="btn btn-warning">Khóa</a></td>
+                    <td>
+                        <?php if ($n["trangthai"] == 1) { ?>
+                            <a href="index.php?action=khoa&id=<?php echo $n['id']; ?>&trangthai=<?php echo $n['trangthai']; ?>" class="btn btn-danger">Khóa</a>
+                        <?php } else {
+                        ?> 
+                        <a href="index.php?action=khoa&id=<?php echo $n['id']; ?>&trangthai=<?php echo $n['trangthai']; ?>" class="btn btn-warning">Mở</a>
+                        <?php } ?>
+                    </td>
                 </tr>
     <?php
             }
