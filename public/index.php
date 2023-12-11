@@ -103,6 +103,40 @@ switch ($action) {
         $giohang = laygiohang();
         include("cart.php");
         break;
+    case "thanhtoan":
+        $giohang = laygiohang();
+        include("thanhtoan.php");
+        break;
+    case "htdonhang":
+            
+         //xử lý thêm diachi
+        $diachimoi = new DIACHI();
+        $macdinh = "1";
+        $diachimoi->setnguoidung_id($_POST["txtid"]);
+        $diachimoi->setdiachi($_POST["txtdiachi"]);
+        $diachimoi->setmacdinh($macdinh);
+        // thêm
+        $dc->themdiachi($diachimoi);
+        //xử lý thêm donhang
+        $donhangmoi = new DONHANG();
+        $date = getdate();
+        $diachi_id = (array)$dc->layidtheodiachi($_POST["txtdiachi"]);
+        $ngay = $date['mday'] . $date['mon'] . $date['year'] ;
+        $ghichu = " " ;
+        $donhangmoi->setnguoidung_id($_POST["txtid"]);
+        $donhangmoi->setdiachi_id($diachi_id);
+        $donhangmoi->setngay($ngay);
+        $donhangmoi->settongtien($_POST["txttongtien"]);
+        $donhangmoi->setghichu($ghichu);
+        // thêm
+        $dh->themdonhang($donhangmoi);
+        // //xử lý thêm donhangct
+        // $donhangctmoi = new DONHANGCT();
+            
+    
+        $sanpham = $sp->laysanpham();
+        include("main.php");
+        break;
     
     default:
         break;
