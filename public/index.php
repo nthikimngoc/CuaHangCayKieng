@@ -103,30 +103,6 @@ switch ($action) {
         $giohang = laygiohang();
         include("cart.php");
         break;
-<<<<<<< HEAD
-    case "dangxuat":
-        unset($_SESSION["nguoidung"]);
-        $sanpham = $sp->laysanpham();
-        include("main.php");
-        break;
-        case "dangnhap":
-            include("dangnhap.php");
-            break;
-        case "xldangnhap":
-            $email = $_POST["txtemail"];
-            $matkhau = $_POST["txtmatkhau"];
-            if ($nd->kiemtranguoidunghople($email, $matkhau) == TRUE) {
-                $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
-                if ($_SESSION["nguoidung"]["loai"] == "3") {
-                    $sanpham = $sp->laysanpham();
-                    include("main.php");
-                } else {
-                }
-            } else {
-                include("dangnhap.php");
-            }
-            break;
-=======
     case "thanhtoan":
         $giohang = laygiohang();
         include("thanhtoan.php");
@@ -174,7 +150,6 @@ switch ($action) {
             include("hoso.php");
             break;
     
->>>>>>> 3992e1aa5618ccdfeb94e218475a3f893d00eb47
     default:
         break;
         
