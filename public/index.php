@@ -103,7 +103,29 @@ switch ($action) {
         $giohang = laygiohang();
         include("cart.php");
         break;
-    
+    case "dangxuat":
+        unset($_SESSION["nguoidung"]);
+        $sanpham = $sp->laysanpham();
+        include("main.php");
+        break;
+        case "dangnhap":
+            include("dangnhap.php");
+            break;
+        case "xldangnhap":
+            $email = $_POST["txtemail"];
+            $matkhau = $_POST["txtmatkhau"];
+            if ($nd->kiemtranguoidunghople($email, $matkhau) == TRUE) {
+                $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
+                if ($_SESSION["nguoidung"]["loai"] == "3") {
+                    $sanpham = $sp->laysanpham();
+                    include("main.php");
+                } else {
+                }
+            } else {
+                include("dangnhap.php");
+            }
+            break;
     default:
         break;
+        
 }
