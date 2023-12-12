@@ -103,7 +103,6 @@ switch ($action) {
         $giohang = laygiohang();
         include("cart.php");
         break;
-<<<<<<< HEAD
     case "dangxuat":
         unset($_SESSION["nguoidung"]);
         $sanpham = $sp->laysanpham();
@@ -126,7 +125,7 @@ switch ($action) {
                 include("dangnhap.php");
             }
             break;
-=======
+
     case "thanhtoan":
         $giohang = laygiohang();
         include("thanhtoan.php");
@@ -173,8 +172,6 @@ switch ($action) {
             $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
             include("hoso.php");
             break;
-    
->>>>>>> 3992e1aa5618ccdfeb94e218475a3f893d00eb47
     default:
         break;
         
