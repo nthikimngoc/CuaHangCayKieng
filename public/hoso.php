@@ -22,15 +22,19 @@
                         <input type="email" class="form-control" id="email" placeholder="Enter email" name="txtemail" value="<?php echo $_SESSION['nguoidung']['email']; ?>" required>
                     </div>
                     <div class="my-3">
-                        <label for="pwd" class="form-label">Số điện thoại:</label>
+                        <label for="txtsdt" class="form-label">Số điện thoại:</label>
                         <input type="number" class="form-control" id="sdt" placeholder="Số điện thoại" name="txtsdt" value="<?php echo $_SESSION['nguoidung']['sodienthoai']; ?>" required>
                     </div>
                     <div class="my-3">
-                        <label for="pwd" class="form-label">Họ tên:</label>
+                        <label for="txtdiachi" class="form-label">Địa chỉ:</label>
+                        <input type="text" class="form-control" id="diachi" placeholder="Địa chỉ" name="txtdiachi" value="<?php echo $_SESSION['nguoidung']['diachi']; ?>" required>
+                    </div>
+                    <div class="my-3">
+                        <label for="txthoten" class="form-label">Họ tên:</label>
                         <input type="text" class="form-control" id="hoten" placeholder="Họ tên" name="txthoten" value="<?php echo $_SESSION['nguoidung']['hoten']; ?>" required>
                     </div>
                     <div class="my-3">
-                        <label for="pwd" class="form-label">Đổi hình đại diện</label>
+                        <label for="fhinhanh" class="form-label">Đổi hình đại diện</label>
                         <input type="file" class="form-control" name="fhinhanh">
                     </div>
                     <div class="form-check my-3">
