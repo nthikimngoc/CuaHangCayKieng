@@ -45,7 +45,11 @@ foreach($phanloai as $l){
             </div>
             <!-- Product actions-->
             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                <div class="text-center"><a class="btn btn-outline-info mt-auto" href="index.php?action=chovaogio&id=<?php echo $s["id"]; ?>soluong=1">Chọn mua</a></div>
+            <form method="post">
+            <input type="hidden" name="action" value="chovaogio">
+            <input type="hidden" name="id" value="<?php echo $s["id"]; ?>">
+            <input class="form-control  btn btn-outline-info mt-auto" type="submit" name="btnchonmua" value="Chọn mua">
+            </form>
             </div>
         </div>
     </div>
