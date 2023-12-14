@@ -22,7 +22,7 @@ foreach($phanloai as $l){
             <?php } // end if ?>
             <!-- Product image-->
             <a href="index.php?action=detail&id=<?php echo $s["id"]; ?>">
-                <img class="card-img-top" src="../<?php echo $s["hinhanh"]; ?>" alt="<?php echo $s["tensp"]; ?>" />
+                <img style=" height:250px; " class="card-img-top" src="../<?php echo $s["hinhanh"]; ?>" alt="<?php echo $s["tensp"]; ?> " />
             </a>
             <!-- Product details-->
             <div class="card-body p-4">
