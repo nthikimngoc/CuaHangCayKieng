@@ -59,9 +59,14 @@ switch($action){
             include("main.php");
             break;
         case "sua":
-            $sp = $sp -> laysanphamtheoid($_GET["id"]);
-            $sanpham = $sp->laysanpham();       
-            include("update.php");
+            if (isset($_GET["id"])) {
+                $s = $sp->laysanphamtheoid($_GET["id"]);
+                $phanloai = $pl->layphanloai();
+                include("update.php");
+            } else {
+                $sanpham = $sp->laysanpham();
+                include("main.php");
+            }
             break;
         case "xulysua": // lưu dữ liệu sửa mới vào db
            
