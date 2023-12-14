@@ -63,7 +63,7 @@ switch($action){
             $sanpham = $sp->laysanpham();       
             include("update.php");
             break;
-        case "capnhat": // lưu dữ liệu sửa mới vào db
+        case "xulysua": // lưu dữ liệu sửa mới vào db
            
             // gán dữ liệu từ form
             $spsua = new sanpham();
