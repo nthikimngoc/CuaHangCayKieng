@@ -21,18 +21,18 @@
                       </ul>
 
                       <!-- Tab panes -->
-                      <div class="tab-content">                        
-                        <div id="menu1" class="container tab-pane active"><br>
-                          
-                          <?php include("inc/topview.php"); ?>
-                          
-                        </div>
-                        <div id="menu2" class="container tab-pane fade"><br>
+                      <div class="tab-content">
+                      <div id="menu1" class="container tab-pane active"><br>
+
+                        <?php include("inc/topview.php"); ?>
+
+                      </div>
+                      <!-- <div id="menu2" class="container tab-pane fade"><br>
                           <h3>Sản phẩm xem nhiều</h3>
                           <p>Đang cập nhật...</p>
 
-                        </div>
-                      </div>
+                        </div> -->
+                    </div>
                     </div>
                 </div>
             </div>
