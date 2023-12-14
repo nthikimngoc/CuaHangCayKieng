@@ -1,16 +1,24 @@
 <?php
+
 require("../model/database.php");
 require("../model/phanloai.php");
 require("../model/sanpham.php");
 require("../model/giohang.php");
-
-
+require("../model/nguoidung.php");
+require("../model/donhang.php");
+//require("../model/donhangct.php");
 
 $pl = new PHANLOAI();
 $phanloai = $pl->layphanloai();
 $sp = new SANPHAM();
 $sanphamxemnhieu = $sp->laysanphamxemnhieu();
+$nd = new NGUOIDUNG();
+$nguoidung = $nd->laydanhsachnguoidung();
+$dh = new DONHANG();
+//$dhct = new DONHANGCT();
 
+// Biến $isLogin cho biết người dùng đăng nhập chưa
+$isLogin = isset($_SESSION["nguoidung"]);
 if (isset($_REQUEST["action"])) {
     $action = $_REQUEST["action"];
 } else {
@@ -125,10 +133,14 @@ switch ($action) {
                 include("dangnhap.php");
             }
             break;
-
-    case "thanhtoan":
-        $giohang = laygiohang();
-        include("thanhtoan.php");
+       case "thanhtoan":
+        // Kiểm tra hành động $action: yêu cầu đăng nhập nếu chưa xác thực
+        if ($isLogin == FALSE) {
+            include("dangnhap.php");
+        } else {
+            $giohang = laygiohang();
+            include("thanhtoan.php");
+        }
         break;
         case "htdonhang":
             //thêm đơn hàng
@@ -142,7 +154,7 @@ switch ($action) {
             // thêm
             $dh->themdonhang($donhangmoi);
             //thêm đơn hàng chi tiết
-            $dhctmoi = new DONHANGCT();
+            //$dhctmoi = new DONHANGCT();
             // $dhctmoi->setdonhang_id($_POST["txtid"]);
             // $dhctmoi->setsanpham_id($ngay);
             // $dhctmoi->setthanhtien($_POST["txttongtien"]);
@@ -157,12 +169,24 @@ switch ($action) {
             include("hoso.php");
             break;
         case "xlhoso":
-            $mand = $_POST["txtid"];
-            $email = $_POST["txtemail"];
-            $sodt = $_POST["txtsdt"];
-            $hoten = $_POST["txthoten"];
-            $hinhanh = $_POST["txthinhanh"];
+        $mand = $_POST["txtid"];
+        $email = $_POST["txtemail"];
+        $sodt = $_POST["txtsdt"];
+        $hoten = $_POST["txthoten"];
+        $hinhanh = $_POST["txthinhanh"];
+        $diachi = $_POST["txtdiachi"];
+
+        if ($_FILES["fhinhanh"]["name"] != null) {
+            $hinhanh = basename($_FILES["fhinhanh"]["name"]);
+            $duongdan = "../images/users/" . $hinhanh;
+            move_uploaded_file($_FILES["fhinhanh"]["tmp_name"], $duongdan);
+        }
+        $nd->capnhatnguoidung($mand, $email, $sodt, $hoten, $hinhanh, $diachi);
+        $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
+        include("hoso.php");
+        break;
     
+
             if ($_FILES["fhinhanh"]["name"] != null) {
                 $hinhanh = basename($_FILES["fhinhanh"]["name"]);
                 $duongdan = "../images/users/" . $hinhanh;
@@ -173,7 +197,6 @@ switch ($action) {
             include("hoso.php");
             break;
     
-
     default:
         break;
 }

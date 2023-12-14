@@ -9,6 +9,7 @@ class NGUOIDUNG
     private $loai;
     private $trangthai;
     private $hinhanh;
+    private $diachi;
 
     public function getid()
     {
@@ -74,6 +75,14 @@ class NGUOIDUNG
     {
         $this->hinhanh = $value;
     }
+    public function getdiachi()
+    {
+        return $this->diachi;
+    }
+    public function setdiachi($value)
+    {
+        $this->diachi = $value;
+    }
     // khai báo các thuộc tính (SV tự viết)
 
     public function kiemtranguoidunghople($email, $matkhau)
@@ -136,8 +145,8 @@ class NGUOIDUNG
     {
         $db = DATABASE::connect();
         try {
-            $sql = "INSERT INTO nguoidung(email,sodienthoai,matkhau,hoten,loai,trangthai,hinhanh) 
-VALUES(:email,:sodienthoai,:matkhau,:hoten,:loai,:trangthai,:hinhanh)";
+            $sql = "INSERT INTO nguoidung(email,sodienthoai,matkhau,hoten,loai,trangthai,hinhanh,diachi) 
+VALUES(:email,:sodienthoai,:matkhau,:hoten,:loai,:trangthai,:hinhanh,:diachi)";
             $cmd = $db->prepare($sql);
             $cmd->bindValue(':email', $nguoidung->email);
             $cmd->bindValue(':matkhau', md5($nguoidung->matkhau));
@@ -146,6 +155,7 @@ VALUES(:email,:sodienthoai,:matkhau,:hoten,:loai,:trangthai,:hinhanh)";
             $cmd->bindValue(':loai', $nguoidung->loai);
             $cmd->bindValue(':trangthai', $nguoidung->trangthai);
             $cmd->bindValue(':hinhanh', $nguoidung->hinhanh);
+            $cmd->bindValue(':diachi', $nguoidung->diachi);
             $cmd->execute();
             $id = $db->lastInsertId();
             return $id;
@@ -157,17 +167,18 @@ VALUES(:email,:sodienthoai,:matkhau,:hoten,:loai,:trangthai,:hinhanh)";
     }
     // Cập nhật thông tin ng dùng: họ tên, số đt, email, ảnh đại diện 
     // (SV nên truyền tham số là 1 đối tượng kiểu người dùng, không nên truyền nhiều tham số rời rạc như thế này)
-    public function capnhatnguoidung($id, $email, $sodt, $hoten, $hinhanh)
+    public function capnhatnguoidung($id, $email, $sodt, $hoten, $hinhanh, $diachi)
     {
         $db = DATABASE::connect();
         try {
-            $sql = "UPDATE nguoidung set hoten=:hoten, email=:email,sodienthoai=:sodt, hinhanh=:hinhanh where id=:id";
+            $sql = "UPDATE nguoidung set hoten=:hoten, email=:email,sodienthoai=:sodt, hinhanh=:hinhanh, diachi=:diachi where id=:id";
             $cmd = $db->prepare($sql);
             $cmd->bindValue(':id', $id);
             $cmd->bindValue(':email', $email);
             $cmd->bindValue(':sodt', $sodt);
             $cmd->bindValue(':hoten', $hoten);
             $cmd->bindValue(':hinhanh', $hinhanh);
+            $cmd->bindValue(':diachi', $diachi);
             $ketqua = $cmd->execute();
             return $ketqua;
         } catch (PDOException $e) {

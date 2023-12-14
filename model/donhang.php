@@ -3,7 +3,6 @@ class DONHANG
 {
     private $id;
     private $nguoidung_id;
-    private $diachi_id;
     private $ngay;
     private $tongtien;
     private $ghichu;
@@ -26,15 +25,6 @@ class DONHANG
     public function setnguoidung_id($value)
     {
         $this->nguoidung_id = $value;
-    }
-    public function getdiachi_id()
-    {
-        return $this->diachi_id;
-    }
-
-    public function setdiachi_id($value)
-    {
-        $this->diachi_id = $value;
     }
     public function getngay()
     {
@@ -80,7 +70,7 @@ class DONHANG
             exit();
         }
     }
-    
+
 
 
     // Lấy danh mục theo id
@@ -105,10 +95,9 @@ class DONHANG
     {
         $dbcon = DATABASE::connect();
         try {
-            $sql = "INSERT INTO donhang(nguoidung_id,diachi_id,ngay,tongtien,ghichu) VALUES(:nguoidung_id,:diachi_id,:ngay,:tongtien,:ghichu)";
+            $sql = "INSERT INTO donhang(nguoidung_id,ngay,tongtien,ghichu) VALUES(:nguoidung_id,:ngay,:tongtien,:ghichu)";
             $cmd = $dbcon->prepare($sql);
             $cmd->bindValue(":nguoidung_id", $donhang->nguoidung_id);
-            $cmd->bindValue(":diachi_id",$donhang->diachi_id);
             $cmd->bindValue(":ngay", $donhang->ngay);
             $cmd->bindValue(":tongtien", $donhang->tongtien);
             $cmd->bindValue(":ghichu", $donhang->ghichu);
