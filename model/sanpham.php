@@ -111,6 +111,21 @@ class SANPHAM
             exit();
         }
     }
+    public function laysanphamhethang()
+    {
+        $dbcon = DATABASE::connect();
+        try {
+            $sql = "SELECT * FROM sanpham WHERE soluongton=0 ";
+            $cmd = $dbcon->prepare($sql);
+            $cmd->execute();
+            $result = $cmd->fetchAll();
+            return $result;
+        } catch (PDOException $e) {
+            $error_message = $e->getMessage();
+            echo "<p>Lỗi truy vấn: $error_message</p>";
+            exit();
+        }
+    }
     // Lấy danh sách mặt hàng thuộc 1 danh mục
     public function laysanphamtheophanloai($phanloaisp)
     {
