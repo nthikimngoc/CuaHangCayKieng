@@ -157,15 +157,7 @@ switch ($action) {
             $donhangmoi->setghichu($ghichu);
             // thêm
             $dh->themdonhang($donhangmoi);
-            //thêm đơn hàng chi tiết
-            //$dhctmoi = new DONHANGCT();
-            // $dhctmoi->setdonhang_id($_POST["txtid"]);
-            // $dhctmoi->setsanpham_id($ngay);
-            // $dhctmoi->setthanhtien($_POST["txttongtien"]);
-            // $dhctmoi->setghichu($ghichu);
-            // $dhct->themdonhangct($dhctmoi);
             xoagiohang();
-            // $sanpham = $sp->giamsoluong($_POST["txtid"], $_POST["txtsl"]);
             $sanpham = $sp->laysanpham();
             include("main.php");
             break;

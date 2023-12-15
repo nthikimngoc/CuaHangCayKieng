@@ -1,5 +1,4 @@
 <?php include("inc/top.php"); ?>
-
 <div class="row">
   <div class="col-sm-9">
     <h3 class="text-info"><?php echo $spct["tensp"]; ?></h3>
