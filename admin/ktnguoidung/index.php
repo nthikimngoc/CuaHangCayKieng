@@ -1,6 +1,8 @@
 <?php
 require("../../model/database.php");
 require("../../model/nguoidung.php");
+require("../../model/sanpham.php");
+
 // Biến $isLogin cho biết người dùng đăng nhập chưa
 $isLogin = isset($_SESSION["nguoidung"]);
 // Kiểm tra hành động $action: yêu cầu đăng nhập nếu chưa xác thực
@@ -11,10 +13,15 @@ if (isset($_REQUEST["action"])) {
 } else {
     $action = "macdinh";
 }
+
 $nd = new NGUOIDUNG();
+$sp = new SANPHAM();
+
 switch ($action) {
     case "macdinh":
-        include("profile.php");
+        $sanphamhh = $sp->laysanphamhethang();
+        
+        include("main.php");
         break;
     case "dangnhap":
         include("login.php");
