@@ -91,15 +91,34 @@ class DONHANG
         }
     }
     // Thêm mới
+    // public function themdonhang($donhang)
+    // {
+    //     $dbcon = DATABASE::connect();
+    //     try {
+    //         $sql = "INSERT INTO donhang(nguoidung_id,ngay,tongtien,ghichu) VALUES(:nguoidung_id,:ngay,:tongtien,:ghichu)";
+    //         $cmd = $dbcon->prepare($sql);
+    //         $cmd->bindValue(":nguoidung_id", $donhang->nguoidung_id);
+    //         $cmd->bindValue(":ngay", $donhang->ngay);
+    //         $cmd->bindValue(":tongtien", $donhang->tongtien);
+    //         $cmd->bindValue(":ghichu", $donhang->ghichu);
+    //         $result = $cmd->execute();
+    //         return $result;
+    //     } catch (PDOException $e) {
+    //         $error_message = $e->getMessage();
+    //         echo "<p>Lỗi truy vấn: $error_message</p>";
+    //         exit();
+    //     }
+    // }
     public function themdonhang($donhang)
     {
         $dbcon = DATABASE::connect();
         try {
+            $tongtien = tinhtiengiohang(); // Lấy tổng tiền từ hàm tinhtiengiohang
             $sql = "INSERT INTO donhang(nguoidung_id,ngay,tongtien,ghichu) VALUES(:nguoidung_id,:ngay,:tongtien,:ghichu)";
             $cmd = $dbcon->prepare($sql);
             $cmd->bindValue(":nguoidung_id", $donhang->nguoidung_id);
             $cmd->bindValue(":ngay", $donhang->ngay);
-            $cmd->bindValue(":tongtien", $donhang->tongtien);
+            $cmd->bindValue(":tongtien", $tongtien);
             $cmd->bindValue(":ghichu", $donhang->ghichu);
             $result = $cmd->execute();
             return $result;

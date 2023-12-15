@@ -35,6 +35,10 @@ switch ($action) {
         $sanpham = $sp->laysanpham();
         include("gioithieu.php");
         break;
+    case "cotloi":
+        $sanpham = $sp->laysanpham();
+        include("cotloi.php");
+        break;
     case "group":
         if (isset($_REQUEST["id"])) {
             $mapl = $_REQUEST["id"];
@@ -157,15 +161,7 @@ switch ($action) {
             $donhangmoi->setghichu($ghichu);
             // thêm
             $dh->themdonhang($donhangmoi);
-            //thêm đơn hàng chi tiết
-            //$dhctmoi = new DONHANGCT();
-            // $dhctmoi->setdonhang_id($_POST["txtid"]);
-            // $dhctmoi->setsanpham_id($ngay);
-            // $dhctmoi->setthanhtien($_POST["txttongtien"]);
-            // $dhctmoi->setghichu($ghichu);
-            // $dhct->themdonhangct($dhctmoi);
             xoagiohang();
-            // $sanpham = $sp->giamsoluong($_POST["txtid"], $_POST["txtsl"]);
             $sanpham = $sp->laysanpham();
             include("main.php");
             break;

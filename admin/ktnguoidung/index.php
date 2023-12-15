@@ -53,7 +53,7 @@ switch ($action) {
         }
         $nd->capnhatnguoidung($mand,$email,$sodt,$hoten,$hinhanh,$diachi);
         $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
-        include("main.php");
+        include("profile.php");
         break;
     default:
         break;

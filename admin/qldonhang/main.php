@@ -18,7 +18,7 @@
                         <td><?php echo $n["hoten"]; ?></td>
                         <td><?php echo $n["diachi"]; ?></td>
                         <td><?php echo $d["ngay"]; ?></td>
-                        <td><?php echo $d["tongtien"]; ?></td>
+                        <td><?php echo number_format($d["tongtien"]); ?> đ</td>
                         <td><?php echo $d["ghichu"]; ?></td>
                     </tr>
     <?php
