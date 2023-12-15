@@ -33,7 +33,7 @@
                     </li>
 
                     <li class="sidebar-item <?php if (strpos($_SERVER["REQUEST_URI"], "ktnguoidung") != false) echo "active"; ?>">
-						<a class="sidebar-link" href="../ktnguoidung/main.php">
+						<a class="sidebar-link" href="../ktnguoidung/index.php">
 							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Bảng điều khiển</span>
 						</a>
 					</li>
