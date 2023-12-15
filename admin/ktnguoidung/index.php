@@ -42,17 +42,18 @@ switch ($action) {
         $mand = $_POST["txtid"];
         $email = $_POST["txtemail"];
         $sodt = $_POST["txtsdt"];
+        $diachi = $_POST["txtdiachi"];
         $hoten = $_POST["txthoten"];
         $hinhanh = $_POST["txthinhanh"];
-
-        if ($_FILES["fhinhanh"]["name"] != null) {
+    
+        if($_FILES["fhinhanh"]["name"] != null) {
             $hinhanh = basename($_FILES["fhinhanh"]["name"]);
             $duongdan = "../../images/users/" . $hinhanh;
             move_uploaded_file($_FILES["fhinhanh"]["tmp_name"], $duongdan);
         }
-        $nd->capnhatnguoidung($mand, $email, $sodt, $hoten, $hinhanh);
+        $nd->capnhatnguoidung($mand,$email,$sodt,$hoten,$hinhanh,$diachi);
         $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
-        include("main.php");
+        include("profile.php");
         break;
     default:
         break;
