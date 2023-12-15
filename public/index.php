@@ -188,19 +188,7 @@ switch ($action) {
         $nd->capnhatnguoidung($mand, $email, $sodt, $hoten, $hinhanh, $diachi);
         $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
         include("hoso.php");
-        break;
-    
-
-            if ($_FILES["fhinhanh"]["name"] != null) {
-                $hinhanh = basename($_FILES["fhinhanh"]["name"]);
-                $duongdan = "../images/users/" . $hinhanh;
-                move_uploaded_file($_FILES["fhinhanh"]["tmp_name"], $duongdan);
-            }
-            $nd->capnhatnguoidung($mand, $email, $sodt, $hoten, $hinhanh);
-            $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
-            include("hoso.php");
-            break;
-    
+        break;  
     default:
         break;
 }
