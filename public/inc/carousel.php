@@ -10,10 +10,13 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../images/carousel/h1.jpg" alt="Cây kiểng" class="d-block w-100">
+                    <img style="height:500px;" src="../images/carousel/cay1.jpg" alt="Cây kiểng" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="../images/carousel/h2.jpg" alt="Hoa" class="d-block w-100">
+                    <img style="height:500px;" src="../images/carousel/cay2.jpg" alt="Hoa" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img style="height:500px;" src="../images/carousel/cay3.jpg" alt="Hoa" class="d-block w-100">
                 </div>
             </div>
 
@@ -24,4 +27,4 @@
             <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </button>
-        </div>            
+        </div>
