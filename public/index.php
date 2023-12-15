@@ -31,6 +31,10 @@ switch ($action) {
         $sanpham = $sp->laysanpham();
         include("main.php");
         break;
+    case "gioithieu":
+        $sanpham = $sp->laysanpham();
+        include("gioithieu.php");
+        break;
     case "group":
         if (isset($_REQUEST["id"])) {
             $mapl = $_REQUEST["id"];
