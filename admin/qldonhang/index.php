@@ -26,7 +26,7 @@ switch ($action) {
         include("main.php");
         break;
     case "them":
-        $donhang = $pq->laydonhang();
+        $donhang = $dh->laydonhang();
 
         include("add.php");
         break;
