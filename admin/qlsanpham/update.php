@@ -5,7 +5,7 @@
         <input type="hidden" name="action" value="xulysua">
         <input type="hidden" name="txtid" value="<?php echo $s["id"]; ?>">
         <div class="my-3">
-            <label>Hãng sản xuất</label>
+            <label>Phân loại</label>
             <select class="form-control" name="optphanloai">
                 <?php foreach ($phanloai as $pl) { ?>
                     <option value="<?php echo $pl["id"]; ?>" <?php if ($pl["id"] == $s["phanloaisp"]) echo "selected"; ?>><?php echo $pl["tenpl"]; ?></option>

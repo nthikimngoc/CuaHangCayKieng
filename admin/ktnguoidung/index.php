@@ -2,6 +2,7 @@
 require("../../model/database.php");
 require("../../model/nguoidung.php");
 require("../../model/sanpham.php");
+require("../../model/phanloai.php");
 
 // Biến $isLogin cho biết người dùng đăng nhập chưa
 $isLogin = isset($_SESSION["nguoidung"]);
@@ -16,6 +17,7 @@ if (isset($_REQUEST["action"])) {
 
 $nd = new NGUOIDUNG();
 $sp = new SANPHAM();
+$pl = new PHANLOAI();
 
 switch ($action) {
     case "macdinh":
