@@ -31,41 +31,18 @@
                     <li class="sidebar-header text-info">
                         HỆ THỐNG
                     </li>
-
                     <li class="sidebar-item <?php if (strpos($_SERVER["REQUEST_URI"], "ktnguoidung") != false) echo "active"; ?>">
-						<a class="sidebar-link" href="../ktnguoidung/index.php">
-							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Bảng điều khiển</span>
-						</a>
-					</li>
+                        <a class="sidebar-link" href="../ktnguoidung/index.php">
+                            <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Bảng điều khiển</span>
+                        </a>
+                    </li>
                     <?php if ($_SESSION["nguoidung"]["loai"] == 1) { ?>
                         <li class="sidebar-item  <?php if (strpos($_SERVER["REQUEST_URI"], "qlnguoidung") != false) echo "active"; ?> ">
                             <a class="sidebar-link" href="../qlnguoidung/index.php">
-                                <i class="align-middle" data-feather="users"></i> <span class="align-middle">Quản lý người dùng</span>
+                                <i class="bi bi-person"></i> <span class="align-middle">Quản lý người dùng</span>
                             </a>
                         </li>
                     <?php } ?>
-                    <li class="sidebar-header text-info">
-                        PHÂN LOẠI
-                    </li>
-
-                    <li class="sidebar-item  
-					<?php if (strpos($_SERVER["REQUEST_URI"], "qlphanloai") != false) echo "active"; ?>
-					">
-                        <a class="sidebar-link" href="../qlphanloai/index.php">
-                            <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Quản lý phân loại</span>
-                        </a>
-                    </li>
-
-                    <li class="sidebar-item <?php if (strpos($_SERVER["REQUEST_URI"], "qlsanpham") != false) echo "active"; ?>">
-                        <a class="sidebar-link" href="../qlsanpham/index.php">
-                            <i class="align-middle" data-feather="package"></i> <span class="align-middle">Quản lý sản phẩm</span>
-                        </a>
-                    </li>
-
-                    <li class="sidebar-header text-info">
-                        KINH DOANH
-                    </li>
-
                     <li class="sidebar-item <?php if (strpos($_SERVER["REQUEST_URI"], "qlkhachhang") != false) echo "active"; ?>">
                         <a class="sidebar-link" href="../qlkhachhang/index.php">
                             <i class="align-middle" data-feather="users"></i> <span class="align-middle">Quản lý khách hàng</span>
@@ -82,6 +59,28 @@
                     <li class="sidebar-item <?php if (strpos($_SERVER["REQUEST_URI"], "qlctkhuyenmai") != false) echo "active"; ?>">
                         <a class="sidebar-link" href="../qlctkhuyenmai/index.php">
                             <i class="align-middle" data-feather="shopping-bag"></i> <span class="align-middle">Chương trình khuyến mãi</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item <?php if (strpos($_SERVER["REQUEST_URI"], "public") != false) echo "active"; ?>">
+                        <a class="sidebar-link" href="../../public/index.php">
+                            <i class="bi bi-display"></i> <span class="align-middle">Giao diện khách hàng</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-header text-info">
+                        SẢN PHẨM
+                    </li>
+
+                    <li class="sidebar-item  
+					<?php if (strpos($_SERVER["REQUEST_URI"], "qlphanloai") != false) echo "active"; ?>
+					">
+                        <a class="sidebar-link" href="../qlphanloai/index.php">
+                            <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Quản lý phân loại</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item <?php if (strpos($_SERVER["REQUEST_URI"], "qlsanpham") != false) echo "active"; ?>">
+                        <a class="sidebar-link" href="../qlsanpham/index.php">
+                            <i class="align-middle" data-feather="package"></i> <span class="align-middle">Quản lý sản phẩm</span>
                         </a>
                     </li>
                 </ul>

@@ -61,9 +61,9 @@ shrink-to-fit=no">
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="text-center mb-3">
-                            Chưa có tài khoản? <a href="index.php?action=dangky">Đăng ký</a>
-                        </div> -->
+                        <div class="text-center mb-3">
+                            Đã có tài khoản? <a href="index.php?action=dangnhap">Đăng nhập</a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -3,8 +3,8 @@ if (!isset($_SESSION["nguoidung"]))
     header("location:../index.php");
 
 require("../../model/database.php");
-// require("../../model/nguoidung.php");
-// require("../../model/quyen.php");
+require("../../model/nguoidung.php");
+require("../../model/quyen.php");
 require("../../model/khuyenmai.php");
 
 // Xét xem có thao tác nào được chọn
@@ -14,8 +14,8 @@ if (isset($_REQUEST["action"])) {
     $action = "xem";
 }
 
-// $pq = new QUYEN();
-// $nd = new NGUOIDUNG();
+$pq = new QUYEN();
+$nd = new NGUOIDUNG();
 $km = new KHUYENMAI();
 
 switch ($action) {
@@ -55,6 +55,8 @@ switch ($action) {
         // load người dùng
         $quyen = $pq->layquyen();
         $nguoidung = $nd->laydanhsachnguoidung();
+        $khuyenmai = $km->laykhuyenmai();
+
         include("main.php");
         break;
     default:

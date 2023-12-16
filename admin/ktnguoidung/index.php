@@ -33,6 +33,7 @@ switch ($action) {
         $matkhau = $_POST["txtmatkhau"];
         if ($nd->kiemtranguoidunghople($email, $matkhau) == TRUE) {
             $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
+            $sanphamhh = $sp->laysanphamhethang();
             include("main.php");
             // } elseif( $_SESSION["nguoidung"]["loai"] == 3 ){
             //     include("../../public/main.php");
