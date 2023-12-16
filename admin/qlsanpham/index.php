@@ -76,6 +76,7 @@ switch($action){
                 $spsua->setmota($_POST["txtmota"]);
                 $spsua->setphanloaisp($_POST["optphanloai"]);
                 $spsua->settensp($_POST["txttensp"]);
+                $spsua->setgiagoc($_POST["txtgiagoc"]);
                 $spsua->setgiaban($_POST["txtgiaban"]);
                 $spsua->setsoluongton($_POST["txtsoluongton"]);
                 $spsua->sethinhanh($_POST["txthinhcu"]);
