@@ -180,9 +180,9 @@
                                 <a class="dropdown-item" href="../ktnguoidung/index.php?action=hoso">
                                     <i class="align-middle me-1" data-feather="user"></i> Hồ sơ cá nhân
                                 </a>
-                                <a class="dropdown-item" href="../ktnguoidung/index.php?action=matkhau">
+                                <!-- <a class="dropdown-item" href="../ktnguoidung/index.php?action=matkhau">
                                     <i class="align-middle me-1" data-feather="key"></i> Đổi mật khẩu
-                                </a>
+                                </a> -->
 
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../ktnguoidung/index.php?action=dangxuat">
