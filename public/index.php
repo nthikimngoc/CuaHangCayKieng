@@ -158,6 +158,9 @@ switch ($action) {
         // thêm
         $dh->themdonhang($donhangmoi);
         xoagiohang();
+        if(isset($_POST["txtsl"])){
+            $sanpham = $sp->giamsoluong($_POST["id"], $_POST["txtsl"]);  
+        }
         $sanpham = $sp->laysanpham();
         include("main.php");
         break;

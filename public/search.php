@@ -14,7 +14,7 @@
                     ?>
                     <!-- Product image-->
                     <a href="index.php?action=detail&id=<?php echo $s["id"]; ?>">
-                        <img class="card-img-top" src="../<?php echo $s["hinhanh"]; ?>" alt="<?php echo $s["tensp"]; ?>" />
+                        <img style=" height:250px;" class="card-img-top" src="../<?php echo $s["hinhanh"]; ?>" alt="<?php echo $s["tensp"]; ?>" />
                     </a>
                     <!-- Product details-->
                     <div class="card-body p-4">
@@ -40,7 +40,12 @@
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-info mt-auto" href="#">Chọn mua</a></div>
+                        <!-- <div class="text-center"><a class="btn btn-outline-info mt-auto" href="#">Chọn mua</a></div> -->
+                        <form method="post">
+                            <input type="hidden" name="action" value="chovaogio">
+                            <input type="hidden" name="id" value="<?php echo $s["id"]; ?>">
+                            <input class="form-control  btn btn-outline-info mt-auto" type="submit" name="btnchonmua" value="Chọn mua">
+                        </form>
                     </div>
                 </div>
             </div>

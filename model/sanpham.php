@@ -271,11 +271,27 @@ VALUES(:tensp,:phanloaisp,:mota,:giagoc,:giaban,:soluongton,:hinhanh,0,0)";
     {
         $dbcon = DATABASE::connect();
         try {
-            $sql = "SELECT * FROM sanpham s, phanloai p where s.phanloaisp = p.id AND  s.tensp like '%$search%'  "; //OR p.tenpl like '%$search%'
+            $sql = "SELECT * FROM sanpham where tensp like '%$search%'  "; 
             $cmd = $dbcon->prepare($sql);
             // $cmd->bindValue(":tensp", $search);
             $cmd->execute();
             $result = $cmd->fetchAll();
+            return $result;
+        } catch (PDOException $e) {
+            $error_message = $e->getMessage();
+            echo "<p>Lỗi truy vấn: $error_message</p>";
+            exit();
+        }
+    }
+    public function giamsoluong($id, $soluongmua)
+    {
+        $dbcon = DATABASE::connect();
+        try {
+            $sql = "UPDATE sanpham SET soluongton=soluongton-:soluongmua WHERE id=:id";
+            $cmd = $dbcon->prepare($sql);
+            $cmd->bindValue(":soluongmua", $soluongmua);
+            $cmd->bindValue(":id", $id);
+            $result = $cmd->execute();
             return $result;
         } catch (PDOException $e) {
             $error_message = $e->getMessage();

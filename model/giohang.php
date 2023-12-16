@@ -46,6 +46,7 @@ function laygiohang()
         $thtien = round($dongia * $soluong, 2);
 
         // Lưu thông tin trong mảng items để hiển thị lên giỏ hàng
+        $mh[$id]['id'] = $m['id'];
         $mh[$id]['tensp'] = $m['tensp'];
         $mh[$id]['hinhanh'] = $m['hinhanh'];
         $mh[$id]['giaban'] = $dongia;
