@@ -26,7 +26,6 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Trang chính</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.php?action=gioithieu">Giới thiệu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../admin/ktnguoidung/index.php">Admin</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Danh mục sản phẩm</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -36,13 +35,15 @@
                             <?php endforeach; ?>
                         </ul>
                     </li>
+                    <?php if(isset($_SESSION["nguoidung"]) && $_SESSION["nguoidung"]["loai"] == 1) {?>
+                    <li class="nav-item"><a class="nav-link" href="../admin/ktnguoidung/index.php">Admin</a></li>
+                    <?php } ?> 
                 </ul>
                 <div class="row">
                     <div class="col-5 ">
                         <form class="d-flex" method="post" action="index.php?action=search">
                             <div class="input-group">
                                 <input type="text" class="form-control " placeholder="Search" name="txtsearch">
-                                <!-- <input type="submit" class="form-control bg-info btn btn-outline-light" name="timkiem" value="tìm kiếm"> -->
                                 <button type="submit" class=" btn btn-light" name="timkiem"><i class="bi-search"></i></button>
                             </div>
                         </form>

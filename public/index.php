@@ -66,26 +66,25 @@ switch ($action) {
     case "search":
         if (isset($_POST["timkiem"])) {
             $ten_tk = $_POST["txtsearch"];
-            if($ten_tk != ""){
+            if ($ten_tk != "") {
                 // lấy thông tin sản phẩm
                 $sanpham = $sp->timkiemsanpham($ten_tk);
                 include("search.php");
-            }else{
+            } else {
                 $sanpham = $sp->laysanpham();
                 include("main.php");
             }
-            
         }
         break;
-        case "xemgiohang":
-            $giohang = laygiohang();
-            include("cart.php");
-            break;
+    case "xemgiohang":
+        $giohang = laygiohang();
+        include("cart.php");
+        break;
     case "chovaogio":
         if (isset($_REQUEST["id"]))
-        $id = $_REQUEST["id"];
+            $id = $_REQUEST["id"];
         if (isset($_REQUEST["soluong"]))
-        $soluong = $_REQUEST["soluong"];
+            $soluong = $_REQUEST["soluong"];
         else
             $soluong = "1";
         if (isset($_SESSION["giohang"][$id])) {
@@ -124,24 +123,21 @@ switch ($action) {
         $sanpham = $sp->laysanpham();
         include("main.php");
         break;
-        case "dangnhap":
+    case "dangnhap":
+        include("dangnhap.php");
+        break;
+    case "xldangnhap":
+        $email = $_POST["txtemail"];
+        $matkhau = $_POST["txtmatkhau"];
+        if ($nd->kiemtranguoidunghople($email, $matkhau) == TRUE) {
+            $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
+            $sanpham = $sp->laysanpham();
+            include("main.php");
+        }else{
             include("dangnhap.php");
-            break;
-        case "xldangnhap":
-            $email = $_POST["txtemail"];
-            $matkhau = $_POST["txtmatkhau"];
-            if ($nd->kiemtranguoidunghople($email, $matkhau) == TRUE) {
-                $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
-                if ($_SESSION["nguoidung"]["loai"] == "3") {
-                    $sanpham = $sp->laysanpham();
-                    include("main.php");
-                } else {
-                }
-            } else {
-                include("dangnhap.php");
-            }
-            break;
-       case "thanhtoan":
+        }
+        break;
+    case "thanhtoan":
         // Kiểm tra hành động $action: yêu cầu đăng nhập nếu chưa xác thực
         if ($isLogin == FALSE) {
             include("dangnhap.php");
@@ -150,25 +146,25 @@ switch ($action) {
             include("thanhtoan.php");
         }
         break;
-        case "htdonhang":
-            //thêm đơn hàng
-            $donhangmoi = new DONHANG();
-            $ngay = date("Y-m-d");
-            $ghichu = " ";
-            $donhangmoi->setnguoidung_id($_POST["txtid"]);
-            $donhangmoi->setngay($ngay);
-            $donhangmoi->settongtien($_POST["txttongtien"]);
-            $donhangmoi->setghichu($ghichu);
-            // thêm
-            $dh->themdonhang($donhangmoi);
-            xoagiohang();
-            $sanpham = $sp->laysanpham();
-            include("main.php");
-            break;
-        case "hoso":
-            include("hoso.php");
-            break;
-        case "xlhoso":
+    case "htdonhang":
+        //thêm đơn hàng
+        $donhangmoi = new DONHANG();
+        $ngay = date("Y-m-d");
+        $ghichu = " ";
+        $donhangmoi->setnguoidung_id($_POST["txtid"]);
+        $donhangmoi->setngay($ngay);
+        $donhangmoi->settongtien($_POST["txttongtien"]);
+        $donhangmoi->setghichu($ghichu);
+        // thêm
+        $dh->themdonhang($donhangmoi);
+        xoagiohang();
+        $sanpham = $sp->laysanpham();
+        include("main.php");
+        break;
+    case "hoso":
+        include("hoso.php");
+        break;
+    case "xlhoso":
         $mand = $_POST["txtid"];
         $email = $_POST["txtemail"];
         $sodt = $_POST["txtsdt"];
@@ -184,7 +180,7 @@ switch ($action) {
         $nd->capnhatnguoidung($mand, $email, $sodt, $hoten, $hinhanh, $diachi);
         $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
         include("hoso.php");
-        break;  
+        break;
     default:
         break;
 }
