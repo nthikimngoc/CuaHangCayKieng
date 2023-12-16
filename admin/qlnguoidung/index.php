@@ -92,43 +92,7 @@ switch ($action) {
             $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($_POST["txtemail"]);
             include("profile.php");
             break;
-case "sua":
-        if (isset($_GET["id"])) {
-            $s = $sp->laysanphamtheoid($_GET["id"]);
-            $phanloai = $pl->layphanloai();
-            include("update.php");
-        } else {
-            $sanpham = $sp->laysanpham();
-            include("main.php");
-        }
-        break;
-    case "xulysua": // lưu dữ liệu sửa mới vào db
 
-        // gán dữ liệu từ form
-        $spsua = new SANPHAM();
-        $spsua->setid($_POST["txtid"]);
-        $spsua->setmota($_POST["txtmota"]);
-        $spsua->setphanloaisp($_POST["optphanloai"]);
-        $spsua->settensp($_POST["txttensp"]);
-        $spsua->setgiaban($_POST["txtgiaban"]);
-        $spsua->setsoluongton($_POST["txtsoluongton"]);
-        $spsua->sethinhanh($_POST["txthinhcu"]);
-        $spsua->setluotxem($_POST["txtluotxem"]);
-        $spsua->setluotmua($_POST["txtluotmua"]);
-
-        if ($_FILES["filehinhanh"]["name"] != "") {
-            //xử lý load ảnh
-            $hinhanh = "images/products/" . basename($_FILES["filehinhanh"]["name"]); // đường dẫn ảnh lưu trong db
-            $spsua->sethinhanh($hinhanh);
-            $duongdan = "../../" . $hinhanh; //nơi lưu file upload
-            move_uploaded_file($_FILES["filehinhanh"]["tmp_name"], $duongdan);
-        }
-        // sửa
-        $sp->suasanpham($spsua);
-        // load danh sách
-        $sanphamhh = $sp->laysanphamhethang();
-        include("main.php");
-        break;
     default:
         break;
 }
