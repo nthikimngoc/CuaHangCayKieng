@@ -32,11 +32,11 @@
                         HỆ THỐNG
                     </li>
 
-                    <!-- <li class="sidebar-item <?php if (strpos($_SERVER["REQUEST_URI"], "ktnguoidung") != false) echo "active"; ?>">
-						<a class="sidebar-link" href="../ktnguoidung/main.php">
+                    <li class="sidebar-item <?php if (strpos($_SERVER["REQUEST_URI"], "ktnguoidung") != false) echo "active"; ?>">
+						<a class="sidebar-link" href="../ktnguoidung/index.php">
 							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Bảng điều khiển</span>
 						</a>
-					</li> -->
+					</li>
                     <?php if ($_SESSION["nguoidung"]["loai"] == 1) { ?>
                         <li class="sidebar-item  <?php if (strpos($_SERVER["REQUEST_URI"], "qlnguoidung") != false) echo "active"; ?> ">
                             <a class="sidebar-link" href="../qlnguoidung/index.php">
