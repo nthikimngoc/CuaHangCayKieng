@@ -6,6 +6,8 @@ require("../../model/database.php");
 require("../../model/nguoidung.php");
 require("../../model/quyen.php");
 require("../../model/donhang.php");
+require("../../model/donhangct.php");
+require("../../model/sanpham.php");
 
 
 // Xét xem có thao tác nào được chọn
@@ -16,7 +18,9 @@ if (isset($_REQUEST["action"])) {
 }
 
 $dh = new DONHANG();
+$dhct = new DONHANGCT();
 $nd = new NGUOIDUNG();
+$sp = new SANPHAM();
 
 switch ($action) {
     case "xem":
@@ -25,15 +29,17 @@ switch ($action) {
 
         include("main.php");
         break;
-    case "them":
-        $donhang = $dh->laydonhang();
-
-        include("add.php");
+    case "chitiet":
+        if (isset($_GET["id"])) {
+            $id_dh = $_GET["id"];
+            // tăng lượt xem lên 1
+            $donhanghh = $dh->laydonhangtheoid($id_dh);
+            $donhangct = $dhct->laydonhangct();            
+            $sanpham = $sp->laysanpham();
+            include("detail.php");
+        }
         break;
-    case "xulythem":
-       
-        break;
-   
+    
     default:
         break;
 }
