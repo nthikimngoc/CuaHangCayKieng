@@ -8,6 +8,7 @@
         <th class="text-info">Ngày</th>
         <th class="text-info">Tổng tiền</th>
         <th class="text-info">Ghi chú</th>
+        <th class="text-info">ID </th>
     </tr>
     <?php
     foreach ($donhang as $d) :
@@ -15,6 +16,9 @@
                 if ($d["nguoidung_id"] == $n["id"]) {
     ?>
                     <tr>
+
+                    <td><a href="index.php?action=chitiet&id=<?php echo $d['id']; ?>"><?php echo $d["id"]; ?></a></td>
+
                         <td><?php echo $n["hoten"]; ?></td>
                         <td><?php echo $n["diachi"]; ?></td>
                         <td><?php echo $d["ngay"]; ?></td>
