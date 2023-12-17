@@ -146,24 +146,52 @@ switch ($action) {
             include("thanhtoan.php");
         }
         break;
-    case "htdonhang":
-        //thêm đơn hàng
-        $donhangmoi = new DONHANG();
-        $ngay = date("Y-m-d");
-        $ghichu = " ";
-        $donhangmoi->setnguoidung_id($_POST["txtid"]);
-        $donhangmoi->setngay($ngay);
-        $donhangmoi->settongtien($_POST["txttongtien"]);
-        $donhangmoi->setghichu($ghichu);
-        // thêm
-        $dh->themdonhang($donhangmoi);
-        xoagiohang();
-        if(isset($_POST["txtsl"])){
-            $sanpham = $sp->giamsoluong($_POST["id"], $_POST["txtsl"]);  
-        }
-        $sanpham = $sp->laysanpham();
-        include("main.php");
-        break;
+        case "htdonhang":
+        
+            // Thêm đơn hàng
+            $donhangmoi = new DONHANG();
+            $ngay = date("Y-m-d");
+            $donhangmoi->setnguoidung_id($_POST["txtid"]);
+            $donhangmoi->setngay($ngay);
+            $donhangmoi->settongtien($_POST["txttongtien"]);
+    
+            $ghichu = $_POST["txtghichu"];
+            $donhangmoi->setghichu($ghichu);
+            // Thêm
+            $dh->themdonhang($donhangmoi);
+    
+            // Thêm đơn hàng chi tiết và giảm số lượng sản phẩm
+    
+            // Lấy ID của đơn hàng vừa được tạo
+            $dbcon = DATABASE::connect();
+    
+            $donhang_id = $dbcon->lastInsertId();
+    
+            $txtid = $_POST["txtid_sp"]; // Lưu giá trị của $_POST["txtid"] vào biến $txtid
+    
+            if (!is_array($txtid)) {
+                $txtid = [$txtid]; // Chuyển đổi giá trị $txtid thành một mảng
+            }
+            $so_luong_id = count($txtid); // Đếm số lượng phần tử trong mảng $txtid
+    
+            for ($i = 0; $i < $so_luong_id; $i++) {
+                $id = $txtid[$i];
+                $dhctmoi = new DONHANGCT();
+                $dhctmoi->setdonhang_id($donhang_id);
+                $dhctmoi->setsanpham_id($id);
+                $dhctmoi->setdongia($_POST["txtdongia"][$i]);
+                $dhctmoi->setsoluong($_POST["txtsl"][$i]);
+                $dhctmoi->setthanhtien($_POST["txtthanhtien"][$i]);
+                $dhct->themdonhangct($dhctmoi);
+    
+                // Giảm số lượng sản phẩm
+                $sp->giamsoluong($id, $_POST["txtsl"][$i]);
+            }
+            xoagiohang();
+            $sanpham = $sp->laysanpham();
+            include("main.php");
+    
+            break;
     case "hoso":
         include("hoso.php");
         break;
