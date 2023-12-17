@@ -1,0 +1,723 @@
+commit 620b8680f6fb06eb2bc67af72a5f34fe069d48c3
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Sun Dec 17 20:01:54 2023 +0700
+
+    donhangct
+
+commit bea7b0d7a2b349f4fb5688e6cfaee0d721d26450
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Sun Dec 17 19:29:54 2023 +0700
+
+    index
+
+commit 2ec241db396b7bbd4fae918996b52ce339424144
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Sun Dec 17 19:28:19 2023 +0700
+
+    detail
+
+commit 95f42d4a9af2cfb28011f5706d6bbe9ae86d38ad
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Sun Dec 17 19:24:59 2023 +0700
+
+    htdonhang
+
+commit 5f439fe1012d0cc939d277fbfbc7e4f73f001874
+Merge: 1e0332d 2d6e6bf
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Sun Dec 17 19:23:24 2023 +0700
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit 1e0332d5430616fb8b5b35959e4da83c230ad87a
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Sun Dec 17 19:23:14 2023 +0700
+
+    thanhtoan
+
+commit 2d6e6bfa672563995a49cf5e8617a1117b2a275a
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Sun Dec 17 06:07:42 2023 -0600
+
+    xoa register
+
+commit a19acdd1dd5541c137055ce65148d8ec5207e1b7
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Sun Dec 17 06:05:58 2023 -0600
+
+    xóa xldk
+
+commit fda856a2d3b7fa4d17e74ee6c2a462ee1a77ce13
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Sat Dec 16 14:04:22 2023 +0700
+
+    top
+
+commit e7478087673447bb9f0df18d227e7daf41e7ebe5
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Sat Dec 16 12:42:38 2023 +0700
+
+    giamsoluong
+
+commit 3341dc7326964edaba0d2a18adb7931ae9df8c1e
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Sat Dec 16 12:15:53 2023 +0700
+
+    top admin
+
+commit 8e9768095e94351a049fe614abdb886d31840907
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Sat Dec 16 11:37:12 2023 +0700
+
+    chuyển giao diện
+
+commit 21463c5470b1c2e9feb545d241ed2326b583e464
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Sat Dec 16 11:12:15 2023 +0700
+
+    update qlsanpham
+
+commit f052f7642679c0e92665e02fa877a34a75b44292
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Sat Dec 16 10:51:44 2023 +0700
+
+    dk
+
+commit 15aea977278ced0642d1b64edd79e6b805b8c27d
+Merge: 6210ac8 d4ade25
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 21:42:49 2023 -0600
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit 6210ac8d82d2d291c67928f411673dd7ff24498c
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 21:42:35 2023 -0600
+
+    update lai index ktnd
+
+commit d4ade25145f0b05651522ee6bf9cb029bf09d4c6
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Sat Dec 16 10:31:13 2023 +0700
+
+    update
+
+commit 1017b38f4ae80039d7718443e16ea7202d37967b
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 21:24:53 2023 -0600
+
+    them vao file index kiem tra nguoi dung
+
+commit b33495adc7cbcbc81a1c0a8e2fa5db427f3a84f9
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 21:23:52 2023 -0600
+
+    update trong KTND
+
+commit bbaa0129ed895f46a298f866088ac3d8201428ab
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 21:20:23 2023 -0600
+
+    them sua, xu ly sua ao index va file update trong KTND
+
+commit ae1a86d85de7509b2db14a7828ef1cd7569e4826
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 20:21:34 2023 -0600
+
+    them ao index kiem ta nguoi dung
+
+commit 41745a2d60c2ee9a91be25fe0761b79f9e317b73
+Merge: 401d6e6 5a34bc0
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 20:19:53 2023 -0600
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit 401d6e62334e0fffd7ba74bc50a3b24223c72628
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 20:19:20 2023 -0600
+
+    đang ky tai khoan nguoi dung
+
+commit 5a34bc081cbb9f57e6348cd3668ac7e75582f612
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Sat Dec 16 09:16:51 2023 +0700
+
+    top dangxuat
+
+commit 7ef56a05741cc5f884d56010dbeb48bc822b5320
+Merge: b42a021 1d91804
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 20:06:29 2023 -0600
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit b42a0214869c5785a7f4f09065c89560cdd444d6
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 20:06:13 2023 -0600
+
+    khuyen mai
+
+commit 1d918047540ab4d5eb81d024435f983598569699
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Sat Dec 16 09:03:40 2023 +0700
+
+    add
+
+commit c1e2385ff8840626b9ec1c75349ad495503a4461
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Sat Dec 16 09:00:42 2023 +0700
+
+    index
+
+commit 732da99166dbbbf6b836da5649b29235f6519d20
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Sat Dec 16 08:59:46 2023 +0700
+
+    qlctkhuyenmai
+
+commit c533df6c73f4540236307c1afb18daeaf709960a
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 23:47:14 2023 +0700
+
+    macdinh
+
+commit c2bf28fc1777d76e42adfcbb3c6617da6ff320c7
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 23:36:47 2023 +0700
+
+    index
+
+commit f984ad4fb7158181ee5e8994a0b778c451442b8a
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 23:35:42 2023 +0700
+
+    ktnguoidung
+
+commit 30bc16d355b376e8e9016642a6c2503c77779f60
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 23:29:48 2023 +0700
+
+    laysanphamhethang
+
+commit 444cb1e2e20cf99d5f2a78cb1b25ba4f103823c5
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 23:23:38 2023 +0700
+
+    main
+
+commit 89f986ea8bd5f4d70b03ed6375e4cf7cec25e2d0
+Merge: 4a10805 d6bdac4
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 23:07:34 2023 +0700
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit 4a108055e6303ccf5a31223ef98520ff821dd3b2
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 23:07:26 2023 +0700
+
+    hoso
+
+commit d6bdac47a664d73c0dbb980ea46f5cff32dbe658
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Dec 15 22:58:40 2023 +0700
+
+    hiển thị tổng tiền
+
+commit 2c3d253b8f5cf8295487688b1e7f3b2e4534c19c
+Merge: a84708a d5908d0
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Dec 15 22:56:25 2023 +0700
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit a84708a57b01f5155acf41780884d1fd68f51eec
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Dec 15 22:56:18 2023 +0700
+
+    themdonhang
+
+commit d5908d021f3b3203b9db29d5ad814d2df3c9462e
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 08:54:26 2023 -0600
+
+    them cotloi ao index
+
+commit f1b37f8c6f0838a4c40c5f6655d2eee37a57001b
+Merge: f6843d2 0137bd6
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 08:53:07 2023 -0600
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit f6843d2cdfd7442776cadef5712cdb68f8754a73
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Fri Dec 15 08:52:39 2023 -0600
+
+    trang gioi thieu
+
+commit 0137bd6313be28012279fb70c593ae6564019b1d
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Dec 15 21:42:48 2023 +0700
+
+    profile
+
+commit ad746861c9ff7a6dfe69e1f32dc4e754cf815e6a
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 21:39:24 2023 +0700
+
+    xlhoso
+
+commit 38fc8cd17046c9425cfaa87e344afe041a028f3f
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 21:31:18 2023 +0700
+
+    trangthai
+
+commit 9fd7b827f6de6ee5465adb6fefdf2c7f23ad3121
+Merge: 4d84e2d c809431
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 21:20:08 2023 +0700
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit 4d84e2d86bd728eac5a1fd623f3e049c0e89a2ec
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 21:18:02 2023 +0700
+
+    gioithieu
+
+commit c8094310651f9ff2890024501849af9b7ec1257a
+Merge: a67c7e0 7ff3f77
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Dec 15 21:14:10 2023 +0700
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit a67c7e0d6e083922a2b496c13403c1b4b0893cd8
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Dec 15 21:13:51 2023 +0700
+
+    dh
+
+commit 7ff3f774e1b942575680a0088f551def8551e563
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Dec 15 21:11:52 2023 +0700
+
+    gioithieu
+
+commit 1dce85d975b832c5f19be0adb8335e449861f2d7
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Dec 15 20:55:11 2023 +0700
+
+    carousel
+
+commit 47c39a31724d9d81e69d153848b997e6893ed67c
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Thu Dec 14 09:40:03 2023 -0600
+
+    fix bug
+
+commit 8a4d110fbce468d96327c305b1979a2ab6a6087c
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Thu Dec 14 09:29:44 2023 -0600
+
+    chinh case sua
+
+commit 648ab3cb2184c5858df3e0e967bb50d97e09eeba
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Thu Dec 14 09:26:54 2023 -0600
+
+    chinh case sua
+
+commit f3e9ec50cff448ce4196cddf5e04fbce20a89ba0
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Thu Dec 14 09:25:54 2023 -0600
+
+    fix bug
+
+commit 8d3d5723503d4370ede79cdc08dc65e06613c4b2
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Thu Dec 14 09:20:02 2023 -0600
+
+    index của quan ly don hang
+
+commit 9c4ea279b806e4b9d1c222571fea2fb29a8e7cee
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Thu Dec 14 09:17:30 2023 -0600
+
+    fix loi
+
+commit 3cf4ecc245c7eff11ab8eb903458ad4064eee41a
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Thu Dec 14 09:13:53 2023 -0600
+
+    nut chon mua
+
+commit 21e08ee0cafce8fd4855265d0c105422efc9d4d5
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Thu Dec 14 09:09:06 2023 -0600
+
+    update cua Quan ly san pham
+
+commit 59aa464733d2da53c227ee1869705e56988aed9d
+Merge: 4af43d6 64eada1
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Thu Dec 14 09:04:56 2023 -0600
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit 64eada18819e8f93782047dcd504e8f0a5cd6769
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Thu Dec 14 21:58:47 2023 +0700
+
+    chonmua
+
+commit c90a0b52a9085f803c6ac7bc121f4a30c4c0b2f0
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Thu Dec 14 21:53:08 2023 +0700
+
+    profile
+
+commit 75065e0e245aa64be110abe37da0a9e3ff25a9b0
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Wed Dec 13 18:17:48 2023 +0700
+
+    qldonhang
+
+commit d09e3cb94531edc97406d45d3e9d7c1b06519576
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Wed Dec 13 17:18:45 2023 +0700
+
+    img carousel
+
+commit cc0318b07361527584f06b6a5ab70f54fd73b26b
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Wed Dec 13 16:49:47 2023 +0700
+
+    case htdonhang
+
+commit 4af43d6b628c03b544594689641e2763d6f49fd4
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Tue Dec 12 11:31:41 2023 -0600
+
+    xóa dòng thừa
+
+commit 7703e84b79a4dcddaf54f2553ee85849f9639418
+Merge: 78b8ef4 b420923
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Tue Dec 12 10:31:13 2023 -0600
+
+    xl đăng nhập
+
+commit 78b8ef452f324e64a2a2b173295e15b114fa74cd
+Author: nthikimngoc <ngocnguyen44008@gmail.com>
+Date:   Tue Dec 12 10:28:56 2023 -0600
+
+    xl đăng nhập
+
+commit b420923b08e6b973abb58ac2079f095f28eb4597
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Tue Dec 12 22:26:13 2023 +0700
+
+    index
+
+commit 39d553471a458241ea15ed3080c8e2eb96e2f720
+Merge: 3e61b71 3992e1a
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Tue Dec 12 09:05:19 2023 -0600
+
+    xl dang nhap
+
+commit 3e61b71cc4c5c07738b0ded5807e7df8fd2ba5ed
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Tue Dec 12 08:43:52 2023 -0600
+
+    xldang nhap va dang xuat
+
+commit 3992e1aa5618ccdfeb94e218475a3f893d00eb47
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Tue Dec 12 21:37:34 2023 +0700
+
+    hoso
+
+commit e5f8f1245cbe0ea3a1eaf1d713393d13dcafc871
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Tue Dec 12 20:26:42 2023 +0700
+
+    qlkhachhang
+
+commit 244f2e279d0f944a09028b012c3606de2bddd6a5
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Mon Dec 11 21:02:16 2023 +0700
+
+    qlkhachhang
+
+commit 764e0694672c07bb3a2b1aec21d54cf43b27b084
+Merge: a9be900 82a3d7a
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Mon Dec 11 20:56:10 2023 +0700
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit a9be900a63bd8c39569a97f32734ee7614a2c1ad
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Mon Dec 11 20:55:58 2023 +0700
+
+    qlnguoidung
+
+commit 82a3d7aa38d18b95bae81874da14aa8d4f2f3453
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Mon Dec 11 20:54:42 2023 +0700
+
+    group
+
+commit 68886f7d588566e91901d9cebbce2342ce356020
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Mon Dec 11 20:15:50 2023 +0700
+
+    data
+
+commit 33c2f5f23fadb7436308694e20da9ee0a773b0ee
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Mon Dec 11 17:47:04 2023 +0700
+
+    thanhtoan
+
+commit e1e5b9caa2725c0483a7417cc184a1a38dbe84d8
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Sat Dec 9 01:17:34 2023 -0600
+
+    dangnhap, kim ngoc
+
+commit 3e1e4afc9df6b609da3423c9cf28eb38d70b0100
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Sat Dec 9 10:53:21 2023 +0700
+
+    donhang
+
+commit 13fdd77492a8cb77bd2605f5fe9d10ea5003a425
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Mon Nov 27 22:03:59 2023 +0700
+
+    dang ky, ngoc
+
+commit fd5b46103174e365fd5e67e700d67826975f733d
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Mon Nov 27 21:35:43 2023 +0700
+
+    qlnguoidung_add
+
+commit 951f469a7327c02ada3b84295bafac5c6540644c
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Mon Nov 27 21:32:28 2023 +0700
+
+    detail
+
+commit fe18fc8a37b286766eee574c90aca42245b75a86
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Sat Nov 25 21:45:20 2023 +0700
+
+    profile
+
+commit a53b4cdb04b5b6cc3c988edb32f31b91f88666a9
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Sat Nov 25 16:06:34 2023 +0700
+
+    qlsanpham, ngoc
+
+commit 0a99c3fc145b02e9b023857cc28d8169f014f8cf
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Fri Nov 24 22:58:12 2023 +0700
+
+    ngoc, qlsanpham
+
+commit 09df37851dee8679bcccb55f87ae6a7c2ece8466
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Nov 24 22:26:57 2023 +0700
+
+    thanhtoan
+
+commit e76b9e14653fb702667a1c0a6f0376c48f188ea8
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Nov 24 21:37:57 2023 +0700
+
+    Profile
+
+commit 3e9eeb1574e84fdce3406d71d144a16e4426f12e
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Nov 24 21:31:35 2023 +0700
+
+    login
+
+commit a8b28a1e6da1151ff7bc067e481abd718c3d6adf
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Thu Nov 23 22:21:42 2023 +0700
+
+    inc
+
+commit a4f76e52c3eaf905648e3ae845e2077587bdc5c3
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Thu Nov 23 22:04:42 2023 +0700
+
+    cart
+
+commit c121cd7f2700883a37d4426bee48537e2d29aa56
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Thu Nov 23 21:54:15 2023 +0700
+
+    ngoc
+
+commit ec1b37f87e62b41dcfdd1ab4f9a18f43d36c9944
+Merge: 69bf505 9cde8d0
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Wed Nov 22 21:55:44 2023 +0700
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit 69bf50599e5f0b9684b8741fa83d9cec4c2ed003
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Wed Nov 22 21:55:19 2023 +0700
+
+    ngoc
+
+commit 9cde8d06fd87e0fec478cca1fbc6171af8989398
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Wed Nov 22 16:54:18 2023 +0700
+
+    images
+
+commit 120a40bd1611530b93dd81dad7ded42a386d8890
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Wed Nov 22 16:52:51 2023 +0700
+
+    model_giohang
+
+commit 0788c71d55733f4d237de8961a9749acd4ea8d39
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Wed Nov 22 16:50:46 2023 +0700
+
+    search
+
+commit 7182aa1896ac789f6fdbf831b3f4c37fb08baf4a
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Wed Nov 22 16:47:45 2023 +0700
+
+    cart
+
+commit 2eeec738d9e5cd8d1d4117826b51cdb31e92914f
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Tue Nov 21 22:30:57 2023 +0700
+
+    Update_data
+
+commit 349ebd5aaef1b630f59968b22bb196ec400e1fd4
+Merge: 382538b 84cd62c
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Tue Nov 21 22:16:56 2023 +0700
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit 382538b51858583388f33b36a0e4e6560a56e027
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Tue Nov 21 22:16:41 2023 +0700
+
+    qlnguoidung
+
+commit 84cd62c116228686c3e2ce3dea2feeb0a8479dc8
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Tue Nov 21 22:15:36 2023 +0700
+
+    ngoc
+
+commit 6c05c9b9544ce0a5988f7f93a74a5e26261fdb64
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Tue Nov 21 22:07:09 2023 +0700
+
+    main
+
+commit 3daa880a0b873c5f048487779572b44211378e88
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Nov 17 23:36:51 2023 +0700
+
+    update_file_sql
+
+commit 68654ed954262d8de2e1f7c3c96892b0a585ce80
+Merge: 4b8a35d 746b40c
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Fri Nov 17 09:52:42 2023 -0500
+
+    Merge branch 'main' of https://github.com/nthikimngoc/CuaHangCayKieng
+
+commit 4b8a35de17cb2d4edb55e799475dc20c1671ff77
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Fri Nov 17 09:51:33 2023 -0500
+
+    ngọc
+
+commit 746b40cfc859c96ec085eab2a97ca153f6e3d329
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Nov 17 21:50:54 2023 +0700
+
+    csdl
+
+commit b512fd0e9f599f553eaeba3a9baf8db3fca49664
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Nov 17 21:48:24 2023 +0700
+
+    model
+
+commit 2184cd6feecf34c7f983ea2d2912537ceab84c38
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Nov 17 21:42:30 2023 +0700
+
+    add_file_huy
+
+commit cf1243272a64a3517cfc227e78daf49238aa767c
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Nov 17 21:40:50 2023 +0700
+
+    add_Huy
+
+commit 43267a9fc77ceac90ed2e4e3a8a5977dccc4064a
+Author: nguyenthikimngoc123433 <ngocnguyen44008@gmail.com>
+Date:   Fri Nov 17 09:39:41 2023 -0500
+
+    ngoc
+
+commit 8180afb96402baa4383a86078c9f387aeb9436ce
+Author: nguyenthikimngoc123433 <147526928+nguyenthikimngoc123433@users.noreply.github.com>
+Date:   Fri Nov 17 09:36:36 2023 -0500
+
+    ngoc
+
+commit 821462118f952e62f3b869ed4954027a990e7134
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Fri Nov 17 20:01:51 2023 +0700
+
+    Add_file
+
+commit 4515fc0eeba6a68c55913854bae621d36b54ee67
+Author: lephung02 <ltmphung_21th@student.agu.edu.vn>
+Date:   Fri Nov 17 15:01:34 2023 +0700
+
+    cây
+
+commit 66fd44fb3099ee8383b2ecd18c6dd22d59cf3372
+Author: nguyenthikimngoc123433 <147526928+nguyenthikimngoc123433@users.noreply.github.com>
+Date:   Wed Nov 15 16:32:59 2023 +0700
+
+    ngoc
+
+commit c474741c86d4d9d9a4e72fc5b545558c9cee8c9c
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Wed Nov 15 16:29:52 2023 +0700
+
+    test1
+
+commit 3c8d0d49bfd4f3a0a2254640dd102eb3ab5f534b
+Author: lamhuy142 <147523526+lamhuy142@users.noreply.github.com>
+Date:   Wed Nov 15 16:25:15 2023 +0700
+
+    huy test
