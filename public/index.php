@@ -149,12 +149,16 @@ switch ($action) {
     case "xldangnhap":
         $email = $_POST["txtemail"];
         $matkhau = $_POST["txtmatkhau"];
-        if ($nd->kiemtranguoidunghople($email, $matkhau) == TRUE ) { //&& $_SESSION["nguoidung"]["loai"] == 1 
-            //include("../admin/ktnguoidung/index.php");
+        if ($nd->kiemtranguoidunghople($email, $matkhau) == TRUE) {
             $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
-            $sanpham = $sp->laysanpham();
-            include("main.php");
-        }else{
+            if ($_SESSION["nguoidung"]["loai"] == "2") {
+                $sanpham = $sp->laysanpham();
+                include("main.php");
+            } else if ($_SESSION["nguoidung"]["loai"] == "1") {
+                $sanpham = $sp->laysanpham();
+                header("Location: ../admin/index.php");
+            }
+        } else {
             include("dangnhap.php");
         }
         break;
