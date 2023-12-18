@@ -6,7 +6,7 @@ require("../model/sanpham.php");
 require("../model/giohang.php");
 require("../model/nguoidung.php");
 require("../model/donhang.php");
-//require("../model/donhangct.php");
+require("../model/donhangct.php");
 
 $pl = new PHANLOAI();
 $phanloai = $pl->layphanloai();
@@ -15,10 +15,10 @@ $sanphamxemnhieu = $sp->laysanphamxemnhieu();
 $nd = new NGUOIDUNG();
 $nguoidung = $nd->laydanhsachnguoidung();
 $dh = new DONHANG();
-//$dhct = new DONHANGCT();
+$dhct = new DONHANGCT();
 
 // Biến $isLogin cho biết người dùng đăng nhập chưa
-$isLogin = isset($_SESSION["nguoidung"]);
+// $isLogin = isset($_SESSION["nguoidung"]);
 if (isset($_REQUEST["action"])) {
     $action = $_REQUEST["action"];
 } else {
@@ -78,6 +78,10 @@ switch ($action) {
         break;
     case "xemgiohang":
         $giohang = laygiohang();
+        $dh_dadat = $dhct->laydonhangct();
+        $sanpham = $sp->laysanpham();
+        $donhang = $dh->laydonhang();
+        $nguoidung = $nd->laydanhsachnguoidung();
         include("cart.php");
         break;
     case "chovaogio":
@@ -94,10 +98,18 @@ switch ($action) {
             themhangvaogio($id, $soluong);
         }
         $giohang = laygiohang();
+        $dh_dadat = $dhct->laydonhangct();
+        $sanpham = $sp->laysanpham();
+        $donhang = $dh->laydonhang();
+        $nguoidung = $nd->laydanhsachnguoidung();
         include("cart.php");
         break;
     case "giohang":
         $giohang = laygiohang();
+        $dh_dadat = $dhct->laydonhangct();
+        $sanpham = $sp->laysanpham();
+        $donhang = $dh->laydonhang();
+        $nguoidung = $nd->laydanhsachnguoidung();
         include("cart.php");
         break;
     case "capnhatgio":
@@ -111,11 +123,19 @@ switch ($action) {
             }
         }
         $giohang = laygiohang();
+        $dh_dadat = $dhct->laydonhangct();
+        $sanpham = $sp->laysanpham();
+        $donhang = $dh->laydonhang();
+        $nguoidung = $nd->laydanhsachnguoidung();
         include("cart.php");
         break;
     case "xoagiohang":
         xoagiohang();
         $giohang = laygiohang();
+        $dh_dadat = $dhct->laydonhangct();
+        $sanpham = $sp->laysanpham();
+        $donhang = $dh->laydonhang();
+        $nguoidung = $nd->laydanhsachnguoidung();
         include("cart.php");
         break;
     case "dangxuat":
@@ -129,7 +149,8 @@ switch ($action) {
     case "xldangnhap":
         $email = $_POST["txtemail"];
         $matkhau = $_POST["txtmatkhau"];
-        if ($nd->kiemtranguoidunghople($email, $matkhau) == TRUE) {
+        if ($nd->kiemtranguoidunghople($email, $matkhau) == TRUE ) { //&& $_SESSION["nguoidung"]["loai"] == 1 
+            //include("../admin/ktnguoidung/index.php");
             $_SESSION["nguoidung"] = $nd->laythongtinnguoidung($email);
             $sanpham = $sp->laysanpham();
             include("main.php");

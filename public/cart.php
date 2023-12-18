@@ -46,4 +46,37 @@ if (demhangtronggio() == 0) { ?>
     </form>
 <?php } //end if 
 ?>
+<h3>Đơn hàng đã đặt</h3>
+<table class="table table-hover">
+    <tr>
+        <th class="text-info">Hình ảnh</th>
+        <th class="text-info">Tên sản phẩm</th>
+        <th class="text-info">Số lượng</th>
+        <th class="text-info">Thành tiền</th>
+        <th class="text-info">Trạng thái</th>
+    </tr>
+    <?php
+    foreach ($donhang as $h) :
+        foreach ($nguoidung as $n) :
+            foreach ($dh_dadat as $d) :
+                foreach ($sanpham as $s) :
+                    if ($d["sanpham_id"] == $s["id"] && $h["nguoidung_id"] == $n["id"] && $h["id"] == $d["donhang_id"]) {
+    ?>
+                        <tr>
+                            <!-- <a href="index.php?action=chitiet&id=<php echo $d['id']; ?>"><php echo $d["id"]; ?></a> -->
+                            <td><img width="40px" class="thumnail" src="..\<?php echo $s['hinhanh']; ?>"></td>
+                            <td><?php echo $s["tensp"]; ?></td>
+                            <td><?php echo $d["soluong"]; ?></td>
+                            <td><?php echo $d["thanhtien"]; ?></td>
+                            <td class="text-success" >Đã thanh toán</td>
+                        </tr>
+    <?php
+                    }
+                endforeach;
+            endforeach;
+        endforeach;
+    endforeach;
+    ?>
+</table>
+
 <?php include("inc/bottom.php"); ?>

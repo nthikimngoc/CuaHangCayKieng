@@ -54,9 +54,9 @@
                             <td><input type="hidden" name="txtid_sp" value="<?php echo $mh["id"]; ?>"><?php echo $mh["id"]; ?></td>
                             <td><img width="50" src="../<?php echo $mh["hinhanh"]; ?>" alt=""></td>
                             <td><input type="hidden" name="txttensp" value="<?php echo $mh["tensp"]; ?>"><?php echo $mh["tensp"]; ?></td>
-                            <td><input type="hidden" name="txtdongia" value="<?php echo number_format($mh['giaban']); ?>"><?php echo number_format($mh["giaban"]); ?>đ</td>
+                            <td><input type="hidden" name="txtdongia" value="<?php echo $mh['giaban']; ?>"><?php echo number_format($mh["giaban"]); ?>đ</td>
                             <td><input type="hidden" name="txtsl" value="<?php echo $mh['soluong']; ?>"><?php echo $mh['soluong']; ?></td>
-                            <td><input type="hidden" name="txtthanhtien" value="<?php echo number_format($mh['thanhtien']); ?>"><?php echo number_format($mh["thanhtien"]); ?>đ</td>
+                            <td><input type="hidden" name="txtthanhtien" value="<?php echo $mh['thanhtien']; ?>"><?php echo number_format($mh["thanhtien"]); ?>đ</td>
                         </tr>
                     <?php endforeach; ?>
                     <tr>
