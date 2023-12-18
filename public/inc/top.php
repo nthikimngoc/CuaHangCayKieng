@@ -36,7 +36,7 @@
                         </ul>
                     </li>
                     <?php if(isset($_SESSION["nguoidung"]) && $_SESSION["nguoidung"]["loai"] == 1) {?>
-                    <li class="nav-item"><a class="nav-link" href="../admin/ktnguoidung/index.php">Admin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../admin/ktnguoidung/index.php">Admin</a></li>
                     <?php } ?> 
                 </ul>
                 <div class="row">
