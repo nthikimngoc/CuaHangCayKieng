@@ -35,9 +35,9 @@
                             <?php endforeach; ?>
                         </ul>
                     </li>
-                    <?php if(isset($_SESSION["nguoidung"]) && $_SESSION["nguoidung"]["loai"] == 1) {?>
+                    <!-- <php if(isset($_SESSION["nguoidung"]) && $_SESSION["nguoidung"]["loai"] == 1) {?>
                         <li class="nav-item"><a class="nav-link" href="../admin/ktnguoidung/index.php">Admin</a></li>
-                    <?php } ?> 
+                    <php } ?>  -->
                 </ul>
                 <div class="row">
                     <div class="col-5 ">

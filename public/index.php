@@ -158,6 +158,7 @@ switch ($action) {
                 $sanpham = $sp->laysanpham();
                 header("Location: ../admin/index.php");
             }
+            
         } else {
             include("dangnhap.php");
         }

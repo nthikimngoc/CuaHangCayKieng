@@ -11,7 +11,7 @@ foreach($phanloai as $l){
 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 <?php 
     foreach($sanpham as $s){ 
-        if($s["phanloaisp"] == $l["id"] && $i < 4){
+        if($s["phanloaisp"] == $l["id"] && $i < 5){
             $i++;
 ?>
     <div class="col mb-5">
